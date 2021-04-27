@@ -1,5 +1,5 @@
 class Student:
-    def __init__(self, name, age, class_ = 'student'):
+    def __init__(self, name, age, class_ = 'Student'):
         self.name = name
         self.age = age
         self.class_ = class_
@@ -8,10 +8,14 @@ class Student:
         average = (physics+maths+chemistry)/3
         return print(f"The average score is {average}")
 
+meg = Student('Meg', 23)
+will = Student('Will', 23, 'Steward')
 alicia = Student('Alicia', 22)
-print(alicia.class_)
-setattr(alicia, 'class_', 'Prefect')
 
-print(alicia.class_)
+print(meg.class_)
+setattr(meg, 'class_', 'Prefect')
 
-alicia.average(10,15,20)
+print(meg.class_)
+print(will.class_)
+print(alicia.class_)
+meg.average(10,15,20)
