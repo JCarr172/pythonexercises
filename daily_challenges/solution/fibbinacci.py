@@ -15,3 +15,5 @@ def f(number):
 
     else:
         return "Function requires a positive integer"
+
+print(f(15))
